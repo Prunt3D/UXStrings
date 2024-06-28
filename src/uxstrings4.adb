@@ -61,6 +61,7 @@ package body UXStrings is
    -------------------
 
    procedure UXString_Read (Stream : not null access Ada.Streams.Root_Stream_Type'Class; Item : out UXString) is
+      pragma Unreferenced (Stream, Item);
    begin
       pragma Compile_Time_Warning (Standard.True, "UXString_Read unimplemented");
       raise Program_Error with "Unimplemented procedure UXString_Read";

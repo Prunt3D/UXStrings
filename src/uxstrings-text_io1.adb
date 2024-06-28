@@ -251,6 +251,7 @@ package body UXStrings.Text_IO is
    -----------
 
    procedure Reset (File : in out File_Type; Mode : in File_Mode) is
+      pragma Unreferenced (File, Mode);
    begin
       pragma Compile_Time_Warning (Standard.True, "Reset unimplemented");
       raise Program_Error with "Unimplemented procedure Reset";
@@ -261,6 +262,7 @@ package body UXStrings.Text_IO is
    -----------
 
    procedure Reset (File : in out File_Type) is
+      pragma Unreferenced (File);
    begin
       pragma Compile_Time_Warning (Standard.True, "Reset unimplemented");
       raise Program_Error with "Unimplemented procedure Reset";
@@ -461,6 +463,7 @@ package body UXStrings.Text_IO is
    -----------
 
    procedure Flush (File : in File_Type) is
+      pragma Unreferenced (File);
    begin
       pragma Compile_Time_Warning (Standard.True, "Flush unimplemented");
       raise Program_Error with "Unimplemented procedure Flush";
@@ -481,6 +484,7 @@ package body UXStrings.Text_IO is
    ---------------------
 
    procedure Set_Line_Length (File : in File_Type; To : in Count) is
+      pragma Unreferenced (File, To);
    begin
       pragma Compile_Time_Warning (Standard.True, "Set_Line_Length unimplemented");
       raise Program_Error with "Unimplemented procedure Set_Line_Length";
@@ -491,6 +495,7 @@ package body UXStrings.Text_IO is
    ---------------------
 
    procedure Set_Line_Length (To : in Count) is
+      pragma Unreferenced (To);
    begin
       pragma Compile_Time_Warning (Standard.True, "Set_Line_Length unimplemented");
       raise Program_Error with "Unimplemented procedure Set_Line_Length";
@@ -501,6 +506,7 @@ package body UXStrings.Text_IO is
    ---------------------
 
    procedure Set_Page_Length (File : in File_Type; To : in Count) is
+      pragma Unreferenced (File, To);
    begin
       pragma Compile_Time_Warning (Standard.True, "Set_Page_Length unimplemented");
       raise Program_Error with "Unimplemented procedure Set_Page_Length";
@@ -511,6 +517,7 @@ package body UXStrings.Text_IO is
    ---------------------
 
    procedure Set_Page_Length (To : in Count) is
+      pragma Unreferenced (To);
    begin
       pragma Compile_Time_Warning (Standard.True, "Set_Page_Length unimplemented");
       raise Program_Error with "Unimplemented procedure Set_Page_Length";
@@ -521,6 +528,7 @@ package body UXStrings.Text_IO is
    -----------------
 
    function Line_Length (File : in File_Type) return Count is
+      pragma Unreferenced (File);
    begin
       pragma Compile_Time_Warning (Standard.True, "Line_Length unimplemented");
       return raise Program_Error with "Unimplemented function Line_Length";
@@ -541,6 +549,7 @@ package body UXStrings.Text_IO is
    -----------------
 
    function Page_Length (File : in File_Type) return Count is
+      pragma Unreferenced (File);
    begin
       pragma Compile_Time_Warning (Standard.True, "Page_Length unimplemented");
       return raise Program_Error with "Unimplemented function Page_Length";
@@ -675,6 +684,7 @@ package body UXStrings.Text_IO is
    --------------
 
    procedure New_Page (File : in File_Type) is
+      pragma Unreferenced (File);
    begin
       pragma Compile_Time_Warning (Standard.True, "New_Page unimplemented");
       raise Program_Error with "Unimplemented procedure New_Page";
@@ -695,6 +705,7 @@ package body UXStrings.Text_IO is
    ---------------
 
    procedure Skip_Page (File : in File_Type) is
+      pragma Unreferenced (File);
    begin
       pragma Compile_Time_Warning (Standard.True, "Skip_Page unimplemented");
       raise Program_Error with "Unimplemented procedure Skip_Page";
@@ -715,6 +726,7 @@ package body UXStrings.Text_IO is
    -----------------
 
    function End_Of_Page (File : in File_Type) return Boolean is
+      pragma Unreferenced (File);
    begin
       pragma Compile_Time_Warning (Standard.True, "End_Of_Page unimplemented");
       return raise Program_Error with "Unimplemented function End_Of_Page";
@@ -772,6 +784,7 @@ package body UXStrings.Text_IO is
    -------------
 
    procedure Set_Col (File : in File_Type; To : in Positive_Count) is
+      pragma Unreferenced (File, To);
    begin
       pragma Compile_Time_Warning (Standard.True, "Set_Col unimplemented");
       raise Program_Error with "Unimplemented procedure Set_Col";
@@ -782,6 +795,7 @@ package body UXStrings.Text_IO is
    -------------
 
    procedure Set_Col (To : in Positive_Count) is
+      pragma Unreferenced (To);
    begin
       pragma Compile_Time_Warning (Standard.True, "Set_Col unimplemented");
       raise Program_Error with "Unimplemented procedure Set_Col";
@@ -792,6 +806,7 @@ package body UXStrings.Text_IO is
    --------------
 
    procedure Set_Line (File : in File_Type; To : in Positive_Count) is
+      pragma Unreferenced (File, To);
    begin
       pragma Compile_Time_Warning (Standard.True, "Set_Line unimplemented");
       raise Program_Error with "Unimplemented procedure Set_Line";
@@ -802,6 +817,7 @@ package body UXStrings.Text_IO is
    --------------
 
    procedure Set_Line (To : in Positive_Count) is
+      pragma Unreferenced (To);
    begin
       pragma Compile_Time_Warning (Standard.True, "Set_Line unimplemented");
       raise Program_Error with "Unimplemented procedure Set_Line";
@@ -812,6 +828,7 @@ package body UXStrings.Text_IO is
    ---------
 
    function Col (File : in File_Type) return Positive_Count is
+      pragma Unreferenced (File);
    begin
       pragma Compile_Time_Warning (Standard.True, "Col unimplemented");
       return raise Program_Error with "Unimplemented function Col";
@@ -832,6 +849,7 @@ package body UXStrings.Text_IO is
    ----------
 
    function Line (File : in File_Type) return Positive_Count is
+      pragma Unreferenced (File);
    begin
       pragma Compile_Time_Warning (Standard.True, "Line unimplemented");
       return raise Program_Error with "Unimplemented function Line";
@@ -852,6 +870,7 @@ package body UXStrings.Text_IO is
    ----------
 
    function Page (File : in File_Type) return Positive_Count is
+      pragma Unreferenced (File);
    begin
       pragma Compile_Time_Warning (Standard.True, "Page unimplemented");
       return raise Program_Error with "Unimplemented function Page";

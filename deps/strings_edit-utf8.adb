@@ -267,7 +267,7 @@ package body Strings_Edit.UTF8 is
             Accum : UTF8_Code_Point;
             Index : Integer := Pointer;
          begin
-            for Character in 1..Count loop
+            for C in 1..Count loop
                Get (Source, Index, Accum);
             end loop;
             Pointer := Index;
